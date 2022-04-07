@@ -20,7 +20,11 @@ promiseToCleanTheRoom
 
 console.log("hello");
 
-// function temp() {
-//   console.log("Inside temp");
-// }
-// temp();
+
+// Promise class takes callback function as arguement
+// That Callback function takes resolve, reject as it's arguments
+// "then" method has a callback function as argument, we can pass value to from resolve to this callback function
+
+//Simple syntax
+
+  // promiseObj.then().catch()
