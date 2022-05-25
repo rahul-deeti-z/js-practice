@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/rahul-deeti-z/js-practice#readme",
   "dependencies": {
-    "immutable": "^4.0.0"
+    "immutable": "^4.0.0",
+    "lodash": "^4.17.21"
   }
 }
