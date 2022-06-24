@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha 'test/**/*.spec.js' --recursive"
   },
   "repository": {
     "type": "git",
@@ -18,7 +17,10 @@
   },
   "homepage": "https://github.com/rahul-deeti-z/js-practice#readme",
   "dependencies": {
+    "chai": "^4.3.6",
     "immutable": "^4.0.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "mocha": "^10.0.0",
+    "sinon": "^14.0.0"
   }
 }
