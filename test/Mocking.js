@@ -21,6 +21,30 @@ class Mocking
         console.log(result);
         return result;
     }
+
+    callTheCallback(callback) {
+        callback();
+    }
+
+    testPromise() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => resolve(2), 500);
+        }).then((result) => result * 3).then((result) => result*3)
+
+        // return new Promise((resolve, reject) => {
+        //     setTimeout(() => resolve(2), 1000);
+        // });
+
+    }
+
+    // same function with async await
+
+    // async testPromise() {
+    //     const result = await new Promise((resolve, reject) => {
+    //         setTimeout(() => resolve(1), 5000);
+    //     });
+    //     return result * 5;
+    // }
 }
 
 module.exports =  Mocking;
